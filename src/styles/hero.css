@@ -1,0 +1,115 @@
+.hero {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content {
+    position: relative;
+  }
+  
+  .hero-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+  }
+  
+  .hero-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  
+  .hero-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: -150px;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+  }
+  
+  .hero-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .hero-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+  
+  .hero-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-card-link {
+    color: #007185;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .hero-card-link:hover {
+    color: #c7511f;
+    text-decoration: underline;
+  }
+  
+  .sign-in-button {
+    background-color: #ffd814;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #f7ca00;
+  }
+  
+  @media (max-width: 1200px) {
+    .hero-cards {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: -100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-cards {
+      grid-template-columns: 1fr;
+      margin-top: -80px;
+    }
+  
+    .hero-gradient {
+      height: 100px;
+    }
+  }
+  
